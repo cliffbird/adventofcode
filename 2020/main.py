@@ -478,8 +478,7 @@ class D7Processor(BaseProcessor):
 
 
 def main():
-    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter,
-                                     description="Compare RBD names")
+    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("day", type=int)
     parser.add_argument("-e", "--example", action="store_true")
 
