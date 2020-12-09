@@ -20,6 +20,7 @@ class BaseProcessor:
         self.base_run()
 
     def base_run(self, path_suffix=""):
+        self.path_suffix = path_suffix
         self.path = self.get_path_from_day(self.day, path_suffix)
         if os.path.exists(self.path):
             if path_suffix:
