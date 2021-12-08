@@ -31,6 +31,8 @@ class BaseProcessor:
             self.run1()
             self.run2()
             print()
+        else:
+            print(f"*** File does not exist: {self.path}")
 
     def run1(self):
         pass
